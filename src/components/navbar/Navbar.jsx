@@ -15,7 +15,7 @@ function Navbar() {
             </button>
             <a href="#">
               <h4>
-                Awesome<span>logo</span>
+                TCS<span>Repository</span>
               </h4>
             </a>
           </div>

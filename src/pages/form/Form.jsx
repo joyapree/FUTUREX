@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import './form.css'
 
 //importing forms
-import { PatientDetails, HospitalDetails, Treatment, SurgicalTreatment } from '../../components/index'
+import { PatientDetails, HospitalDetails, Treatment, SurgicalTreatment, Review, Confirmation } from '../../components/index'
 
 import {Navbar, ProgressBar} from '../../components/index'
 
@@ -41,6 +41,21 @@ function Form() {
         <Navbar/>
         <ProgressBar value={4} />
         <SurgicalTreatment/>
+      </>
+    )
+  }else if (params.pg == 'ReviewDetails') {
+    return(
+      <>
+        <Navbar/>
+        <ProgressBar value={5} />
+        <Review/>
+      </>
+    )
+  }else if (params.pg == 'submitted') {
+    return(
+      <>
+        <Navbar/>
+        <Confirmation/>
       </>
     )
   }

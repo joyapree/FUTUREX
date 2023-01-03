@@ -4,6 +4,8 @@ import PatientDetails from "./tumorForms/patientDetails/PatientDetails";
 import HospitalDetails from "./tumorForms/hospitalDetails/HospitalDetails";
 import Treatment from "./tumorForms/treatment/Treatment";
 import SurgicalTreatment from "./tumorForms/surgicalTreatment/SurgicalTreatment";
+import Review from "./tumorForms/Review/Review";
+import Confirmation from "./tumorForms/confirmation/Confirmation";
 
 
 
@@ -16,5 +18,7 @@ export {
     PatientDetails,
     HospitalDetails,
     Treatment,
-    SurgicalTreatment
+    SurgicalTreatment,
+    Review,
+    Confirmation
 }

@@ -1,0 +1,161 @@
+
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.review .container {
+    position: relative;
+    width: 70vw;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 50px 15px 0px 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.review .container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.review .container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+
+.review .container .mainLeftRight{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.review .container .left{
+    flex: 1;
+    border-right: 1px solid rgb(219, 238, 255);
+    padding-right: 30px;
+}
+
+.review .container .left div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0 5px 10px;
+    margin: 4px 0 4px 0;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.review .container .left div:nth-child(odd){
+    background-color: rgb(232, 245, 255);
+}
+
+.review .container .left div span:nth-child(1){
+    flex: 1;
+}
+
+.review .container .left div span:nth-child(2){
+    flex: 2;
+}
+
+
+
+.review .container .right{
+    flex: 1;
+    padding-left: 20px;
+}
+
+.review .container .right div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0 5px 10px;
+    margin: 4px 0 4px 0;
+    border-radius: 4px;
+    align-items: center;
+}
+
+/* .review .container .right div:nth-child(even){
+    background-color: rgb(245, 245, 245);
+} */
+
+.review .container .right div:nth-child(odd){
+    background-color: rgb(232, 245, 255);
+}
+
+.review .container .right div span:nth-child(1){
+    flex: 1;
+}
+
+.review .container .right div span:nth-child(2){
+    flex: 2;
+}
+  
+
+.review .container  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 200px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.review .container .btnText{
+    font-size: 14px;
+    font-weight: 400;
+}
+.review  button:hover{
+    background-color: #265df2;
+}
+
+.review .buttons{
+    display: flex;
+    align-items: center;
+}
+.review  .buttons button{
+    margin-right: 14px;
+}
+
+
+.review .other{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.review .other label{
+  margin-right: 5px;
+  border-left: 1px solid rgba(165, 165, 165, 0.5);
+  padding-left: 5px;
+}
+
+
+
+/* editing hospital details */
+.hospitalDetails{
+    margin-top: 20px;
+}

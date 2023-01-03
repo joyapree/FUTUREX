@@ -1,0 +1,180 @@
+.confirmation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+
+
+
+.confirmation .container {
+    position: relative;
+    width: 40vw;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 50px 15px 0px 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .star {
+	 position: absolute;
+	 animation: grow 3s infinite;
+	 fill: var(--color-blue);
+	 opacity: 0;
+}
+ .star:nth-child(1) {
+	 width: 12px;
+	 height: 12px;
+	 left: 12px;
+	 top: 16px;
+}
+ .star:nth-child(2) {
+	 width: 18px;
+	 height: 18px;
+	 left: 168px;
+	 top: 84px;
+}
+ .star:nth-child(3) {
+	 width: 10px;
+	 height: 10px;
+	 left: 32px;
+	 top: 162px;
+}
+ .star:nth-child(4) {
+	 width: 20px;
+	 height: 20px;
+	 left: 82px;
+	 top: -12px;
+}
+ .star:nth-child(5) {
+	 width: 14px;
+	 height: 14px;
+	 left: 125px;
+	 top: 162px;
+}
+ .star:nth-child(6) {
+	 width: 10px;
+	 height: 10px;
+	 left: 16px;
+	 top: 16px;
+}
+ .star:nth-child(1) {
+	 animation-delay: 1.5s;
+}
+ .star:nth-child(2) {
+	 animation-delay: 3s;
+}
+ .star:nth-child(3) {
+	 animation-delay: 4.5s;
+}
+ .star:nth-child(4) {
+	 animation-delay: 6s;
+}
+ .star:nth-child(5) {
+	 animation-delay: 7.5s;
+}
+ .star:nth-child(6) {
+	 animation-delay: 9s;
+}
+ .checkmark {
+	 position: relative;
+	 padding: 30px;
+	 animation: checkmark 5m cubic-bezier(0.42, 0, 0.275, 1.155) both;
+}
+ .checkmark__check {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 z-index: 10;
+	 transform: translate3d(-50%, -50%, 0);
+	 fill: var(--color-white);
+}
+ .checkmark__background {
+	 fill: var(--color-blue);
+	 animation: rotate 35s linear both infinite;
+}
+ @keyframes rotate {
+	 0% {
+		 transform: rotate(0deg);
+	}
+	 100% {
+		 transform: rotate(360deg);
+	}
+}
+ @keyframes grow {
+	 0%, 100% {
+		 transform: scale(0);
+		 opacity: 0;
+	}
+	 50% {
+		 transform: scale(1);
+		 opacity: 1;
+	}
+}
+ @keyframes checkmark {
+	 0%, 100% {
+		 opacity: 0;
+		 transform: scale(0);
+	}
+	 10%, 50%, 90% {
+		 opacity: 1;
+		 transform: scale(1);
+	}
+}
+
+
+.confirmation .container h1{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(42, 42, 42);
+}
+
+.confirmation .container h2{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(141, 141, 141);
+}
+
+
+
+.confirmation .container  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 200px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.confirmation .container .btnText{
+    font-size: 14px;
+    font-weight: 500;
+}
+.confirmation  button:hover{
+    background-color: #265df2;
+}
+
+.confirmation .buttons{
+    display: flex;
+    align-items: center;
+}
+.confirmation  .buttons button{
+    margin-right: 14px;
+}

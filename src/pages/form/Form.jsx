@@ -2,9 +2,9 @@ import { useParams } from "react-router-dom";
 import './form.css'
 
 //importing forms
-import { PatientDetails, HospitalDetails, Treatment, SurgicalTreatment, Review, Confirmation } from '../../components/index'
+import { PatientDetails, HospitalDetails, Treatment, SurgicalTreatment, Review, Confirmation} from '../../components/index'
 
-import {Navbar, ProgressBar} from '../../components/index'
+import {Navbar, ProgressBar, Footer} from '../../components/index'
 
 
 function Form() {
@@ -17,6 +17,7 @@ function Form() {
         <Navbar/>
         <ProgressBar value={1} />
         <PatientDetails/>
+        <Footer/>
       </>
     )
   } else if (params.pg == 'HospitalDetails') {
@@ -25,6 +26,7 @@ function Form() {
           <Navbar/>
           <ProgressBar value={2} />
           <HospitalDetails/>
+          <Footer/>
         </>
       )
   } else if (params.pg == 'TreatmentDetails') {
@@ -33,6 +35,7 @@ function Form() {
         <Navbar/>
         <ProgressBar value={3} />
         <Treatment/>
+        <Footer/>
       </>
     )
   } else if (params.pg == 'SurgeryTreatmentDetails') {
@@ -41,6 +44,7 @@ function Form() {
         <Navbar/>
         <ProgressBar value={4} />
         <SurgicalTreatment/>
+        <Footer/>
       </>
     )
   }else if (params.pg == 'ReviewDetails') {
@@ -49,6 +53,7 @@ function Form() {
         <Navbar/>
         <ProgressBar value={5} />
         <Review/>
+        <Footer/>
       </>
     )
   }else if (params.pg == 'submitted') {
@@ -56,6 +61,7 @@ function Form() {
       <>
         <Navbar/>
         <Confirmation/>
+        <Footer/>
       </>
     )
   }

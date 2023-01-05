@@ -301,7 +301,7 @@ function SurgicalTreatment() {
               </div>
             </div>
             <div class="buttons">
-              <Link to="/form/tumor/ReviewDetails">
+              <Link to="/form/tumor/ReviewDetails" style={{ textDecoration: "none" }} >
                 <button className="nextBtn">
                   <span className="btnText">Next</span>
                 </button>

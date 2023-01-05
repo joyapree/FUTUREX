@@ -220,7 +220,7 @@ function Review() {
 
         {/* button */}
         <div class="buttons">
-          <Link to="/form/tumor/submitted">
+          <Link to="/form/tumor/submitted" style={{ textDecoration: "none" }} >
             <button className="nextBtn">
               <span className="btnText">Submit</span>
             </button>

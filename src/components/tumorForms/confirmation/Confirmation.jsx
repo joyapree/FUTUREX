@@ -83,7 +83,7 @@ function Confirmation() {
         <h1> Form Saved Successfully </h1>
         <h2>Thank You</h2>
         <div class="buttons">
-          <Link to="#" style={{ textDecoration: 'none' }} >
+          <Link to="/" style={{ textDecoration: "none" }}>
             <button className="nextBtn">
               <span className="btnText">Home</span>
             </button>

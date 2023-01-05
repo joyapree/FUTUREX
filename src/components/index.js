@@ -6,6 +6,7 @@ import Treatment from "./tumorForms/treatment/Treatment";
 import SurgicalTreatment from "./tumorForms/surgicalTreatment/SurgicalTreatment";
 import Review from "./tumorForms/Review/Review";
 import Confirmation from "./tumorForms/confirmation/Confirmation";
+import Footer from "./footer/Footer";
 
 
 
@@ -20,5 +21,6 @@ export {
     Treatment,
     SurgicalTreatment,
     Review,
-    Confirmation
+    Confirmation,
+    Footer
 }

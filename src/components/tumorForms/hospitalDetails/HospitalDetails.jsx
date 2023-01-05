@@ -59,7 +59,7 @@ function HospitalDetails() {
                     <input type="date" placeholder="Surgery Date" required />
                   </div>
                 </div>
-                <Link to="/form/tumor/TreatmentDetails">
+                <Link to="/form/tumor/TreatmentDetails" style={{ textDecoration: "none" }} >
                   <button className="nextBtn">
                     <span className="btnText">Next</span>
                   </button>

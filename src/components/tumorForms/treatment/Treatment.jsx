@@ -167,7 +167,7 @@ function Treatment() {
             </div>
           </div>
           <div class="buttons">
-            <Link to="/form/tumor/SurgeryTreatmentDetails">
+            <Link to="/form/tumor/SurgeryTreatmentDetails" style={{ textDecoration: "none" }} >
               <button className="nextBtn">
                 <span className="btnText">Next</span>
               </button>

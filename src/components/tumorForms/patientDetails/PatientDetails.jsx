@@ -87,7 +87,7 @@ function PatientDetails() {
                 <div className="input-field" style={{ opacity: 0 }}></div>
               </div>
             </div>
-            <Link to="/form/tumor/HospitalDetails">
+            <Link to="/form/tumor/HospitalDetails" style={{ textDecoration: "none" }} >
               <button className="nextBtn">
                 <span className="btnText">Next</span>
               </button>
